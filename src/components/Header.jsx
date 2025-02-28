@@ -1,4 +1,4 @@
-import MainNav from "./MainNav";
+import MainNav from './MainNav'
 
 const Header = () => {
     return(

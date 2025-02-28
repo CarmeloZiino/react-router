@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes , Route } from "react-router-dom";
 
 //pages
 import HomePage from './pages/HomePage';
 import ChiSiamo from './pages/ChiSiamo';
+import Posts from "./pages/Posts";
 
 //layouts
 import DefaultLayout from './layouts/DefaultLayout'
@@ -16,13 +17,12 @@ return (
 <BrowserRouter>
   <Routes>
   <Route Component={DefaultLayout}>
-          <Route path="/" element={HomePage} />
-          <Route path="/chisiamo" element={ChiSiamo} />
+          <Route path="/" Component={HomePage} />
+          <Route path="/chi-siamo" Component={ChiSiamo} />
+          <Route path="/posts" Component={Posts} />
         </Route>
-  </Routes>
++  </Routes>
 </BrowserRouter>
 
 );
-
-
 }
