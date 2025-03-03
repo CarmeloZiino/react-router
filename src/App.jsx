@@ -19,7 +19,7 @@ return (
   <Routes>
   <Route Component={DefaultLayout}>
             <Route index Component={HomePage} />
-            <Route path="/aboutus" Component={ChiSiamo} />
+            <Route path="/chi-siamo" Component={ChiSiamo} />
             <Route path="/posts" Component={Posts} />
             <Route path="/posts/:id" Component={SinglePost} />
           </Route>
